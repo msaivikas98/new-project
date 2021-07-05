@@ -1,0 +1,21 @@
+### API 1 - to write words into database
+POST http://localhost:3000/add
+Content-Type: application/json
+
+{
+    "word":"verloop"
+}
+
+### API 2 - to get specific story from the database by using id of the story
+GET http://localhost:3000/stories/1
+
+### API 3 - to get stories from the database
+GET http://localhost:3000/stories
+Content-Type: application/json
+
+{
+    "limit":100,
+    "offset":0,
+    "sort":"created_at",
+    "order":"asc"
+}
