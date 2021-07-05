@@ -1,6 +1,6 @@
 #add_story
 
-note:project files can be open in visual studio code
+    note:project files can be open in visual studio code
 
 Database name -"addStory.db"
 
