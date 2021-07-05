@@ -1,19 +1,20 @@
 #add_story
 
+note:project files can be open in visual studio code
+
 Database name -"addStory.db"
 
 table name "story"
 
 table:story
-column_name | data_type
 
----
+        column_name |   data_type
 
-id | INTEGER
-title | VARCHAR(200)
-body | TEXT
-created_at | date
-updated-at | date
+        id          |   INTEGER
+        title       |   VARCHAR(200)
+        body        |   TEXT
+        created_at  |   date
+        updated-at  |   date
 
 APIs :
 
@@ -73,6 +74,7 @@ path:"/stories/1"
 API-3: to get stories from the database
 path:"/stories"
 
+        Response:
         200 OK
 
         {
@@ -90,7 +92,10 @@ path:"/stories"
         }
 
 NOTE:
-Every time when we run the initiate the project, the data created in the database earlier will be lost.
-i.e, when we initiate the server we can add new stories starting the id from 1
 
-In addition to this, we can add users to the database, maintain records for each user. We can use authentication and authorization methods to show specific stories for the user in a secure way
+    Every time when we run the initiate the project, the data created in the database earlier will be lost.
+    i.e, when we initiate the server we can add new stories starting the id from 1
+
+ADDITIONAL TO PROJECT:
+
+    In additional to this, we can add users to the database, maintain records for each user. We can use authentication and authorization methods to show specific stories for the user in a secure way
